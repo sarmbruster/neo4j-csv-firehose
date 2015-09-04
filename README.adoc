@@ -1,0 +1,32 @@
+# neo4j-csv-firehose
+
+neo4j-csv-firehose enables Neo4j's `LOAD CSV` Cypher command to load other from other datasources as well. It provides a Neo4j unmanaged extension doing on-the-fly conversion of the other datasource to csv - and can therefore act as input for `LOAD CSV`.
+
+
+## Installation
+
+This project uses [gradle](http://www.gradle.org) as build system. Since the gradle wrapper in included, there is no need to download anything beforehand. To build the project just type:
+
+    ./graldew shadow
+
+The `shadow` task creates one single uber-jar file containing the code of this project itself and those of its dependencies not being part of the neo4j distribution.
+
+Copy (or symlink) the resulting file `./build/libs/neo4j-csv-firehose-0.1-SNAPSHOT-all.jar` to Neo4j's `plugins` folder. Copy the JDBC driver jar files for your relational databases into the `plugins` folder as well.
+
+Change configuration in `$NEO4J/conf/neo4j-server.properties`:
+
+    org.neo4j.server.thirdparty_jaxrs_classes=org.neo4j.extension.firehose=/csv
+
+After a restart using `$NEO4J_HOME/bin/neo4j restart` the extensions are active.
+
+## Usage ##
+
+A new REST endpoint for rendering JDBC datasource as csv is added:
+
+     http://localhost:7474/csv/jdbc/<jdbc_connect_string>?parameter1=value1&parameter2=value2....
+
+< see JDBCHandler for now >
+
+### example ###
+
+tbd
