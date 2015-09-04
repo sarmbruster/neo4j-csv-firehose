@@ -43,9 +43,4 @@ dependencies {
     testCompile group: 'org.neo4j.app', name: 'neo4j-server', version: neo4jVersion
     testCompile 'com.h2database:h2:1.4.188'
 
-//    testCompile group: 'org.neo4j', name: 'neo4j-kernel', version: neo4jVersion
-//    testCompile group: 'org.neo4j', name: 'neo4j-lucene-index', version: neo4jVersion
-//    testCompile group: 'org.neo4j', name: 'neo4j-cypher', version: neo4jVersion
-
-
 }
