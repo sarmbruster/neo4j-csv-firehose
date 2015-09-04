@@ -39,14 +39,14 @@ The following query parameter are available - remember to use proper url encodin
 
 This endpoint can then be used to run LOAD CSV in Cypher. We assume having a mysql database on localhost, dbname is `mydb`, credentials are `mydb:123`. We want to import from table `person` which has 2 columns: `lastName` and `firstName`. Using the following Cypher statement hits directly the mysql database and creates a node for each person:
 
-neo4j-sh (?)$ load csv with headers from "http://localhost:7474/csv/jdbc?url=jdbc%3Amysql%3A%2F%2Flocalhost%2Fmydb&table=person&user=mydb&password=123" as line create (:Person {firstname: line.firstName, lastname: line.lastName});
-+-------------------+
-| No data returned. |
-+-------------------+
-Nodes created: 2142
-Properties set: 4284
-Labels added: 2142
-1422 ms
+    neo4j-sh (?)$ load csv with headers from "http://localhost:7474/csv/jdbc?url=jdbc%3Amysql%3A%2F%2Flocalhost%2Fmydb&table=person&user=mydb&password=123" as line create (:Person {firstname: line.firstName, lastname: line.lastName});
+    +-------------------+
+    | No data returned. |
+    +-------------------+
+    Nodes created: 2142
+    Properties set: 4284
+    Labels added: 2142
+    1422 ms
 
 ## known gotchas
 
