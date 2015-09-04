@@ -13,9 +13,8 @@ import static org.neo4j.extension.firehose.StreamingHelper.*;
 public class JdbcHandler {
 
     @GET
-    @Path("/{jdbcString}")
     public Response jdbcAsCsv(
-            @PathParam("jdbcString") String jdbcString,
+            @QueryParam("url") String jdbcString,
             @QueryParam("sql") String sql,
             @QueryParam("table") String table,
             @QueryParam("user") String user,

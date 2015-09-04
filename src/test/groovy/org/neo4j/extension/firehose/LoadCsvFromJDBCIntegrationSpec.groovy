@@ -43,8 +43,8 @@ create table person (
 
         where:
         url                                                                                 | count
-        "csv/jdbc/jdbc:h2:mem:devDb?table=Person"                                           | 2
-        "csv/jdbc/jdbc:h2:mem:devDb?sql=${encode("select * from Person limit 1", 'UTF-8')}" | 1
+        "csv/jdbc?url=jdbc:h2:mem:devDb&table=Person"                                           | 2
+        "csv/jdbc?url=jdbc:h2:mem:devDb&sql=${encode("select * from Person limit 1", 'UTF-8')}" | 1
 
     }
 
