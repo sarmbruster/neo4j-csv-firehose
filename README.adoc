@@ -23,10 +23,34 @@ After a restart using `$NEO4J_HOME/bin/neo4j restart` the extensions are active.
 
 A new REST endpoint for rendering JDBC datasource as csv is added:
 
-     http://localhost:7474/csv/jdbc/<jdbc_connect_string>?parameter1=value1&parameter2=value2....
+     http://localhost:7474/csv/jdbc?parameter1=value1&parameter2=value2....
 
-< see JDBCHandler for now >
+The following query parameter are available - remember to use proper url encoding for their values:
 
-### example ###
+|===
+| parameter name | description | mandatory
 
-tbd
+| url      | the jdbc connection string, syntax depends on your jdbc driver, e.g. `jdbc:mysql://localhost/mydb` | yes
+| user     | database login for jdbc connection | no
+| password | database password for jdbc connection | no
+| table    | name of the database table to convert to csv. All columns and rows are used | either `table` or `sql`
+| sql      | a sql statement to be rendered to csv | either `table` or `sql`
+|===
+
+This endpoint can then be used to run LOAD CSV in Cypher. We assume having a mysql database on localhost, dbname is `mydb`, credentials are `mydb:123`. We want to import from table `person` which has 2 columns: `lastName` and `firstName`. Using the following Cypher statement hits directly the mysql database and creates a node for each person:
+
+neo4j-sh (?)$ load csv with headers from "http://localhost:7474/csv/jdbc?url=jdbc%3Amysql%3A%2F%2Flocalhost%2Fmydb&table=person&user=mydb&password=123" as line create (:Person {firstname: line.firstName, lastname: line.lastName});
++-------------------+
+| No data returned. |
++-------------------+
+Nodes created: 2142
+Properties set: 4284
+Labels added: 2142
+1422 ms
+
+## known gotchas
+
+You need to switch off authentication in your Neo4j instance. In neo4j-server.properties set:
+
+    dbms.security.auth_enabled=false
+
