@@ -1,0 +1,32 @@
+group 'org.neo4j.contrib'
+version '0.1-SNAPSHOT'
+
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "https://raw.github.com/neo4j-contrib/m2/master/releases" }
+}
+
+ext {
+    neo4jVersion = "2.2.5"
+}
+
+dependencies {
+    testCompile "org.codehaus.groovy:groovy-all:2.4.3"
+    compile 'com.opencsv:opencsv:3.5'
+
+    testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
+    testCompile group: 'org.neo4j.contrib', name: 'neo4j-spock-extension', version: '0.5.2'
+    testCompile group: 'org.neo4j', name: 'neo4j-community', version: neo4jVersion
+    testCompile group: 'org.neo4j.app', name: 'neo4j-server', version: neo4jVersion
+    testCompile 'com.h2database:h2:1.4.188'
+
+//    testCompile group: 'org.neo4j', name: 'neo4j-kernel', version: neo4jVersion
+//    testCompile group: 'org.neo4j', name: 'neo4j-lucene-index', version: neo4jVersion
+//    testCompile group: 'org.neo4j', name: 'neo4j-cypher', version: neo4jVersion
+
+
+}
