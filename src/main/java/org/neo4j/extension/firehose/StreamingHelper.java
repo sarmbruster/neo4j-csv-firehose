@@ -1,6 +1,6 @@
 package org.neo4j.extension.firehose;
 
-import com.opencsv.CSVWriter;
+import au.com.bytecode.opencsv.CSVWriter;
 import org.neo4j.function.Function;
 
 import javax.ws.rs.WebApplicationException;
