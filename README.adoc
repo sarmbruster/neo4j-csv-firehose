@@ -1,6 +1,6 @@
 # neo4j-csv-firehose
 
-![Travis CI status](https://travis-ci.org/sarmbruster/neo4j-csv-firehose.svg?branch=master)
+image::https://travis-ci.org/sarmbruster/neo4j-csv-firehose.svg?branch=master[[Travis CI status]
 
 neo4j-csv-firehose enables Neo4j's `LOAD CSV` Cypher command to load other from other datasources as well. It provides a Neo4j unmanaged extension doing on-the-fly conversion of the other datasource to csv - and can therefore act as input for `LOAD CSV`. Alternatively it can be run as standalone server.
 
