@@ -9,36 +9,23 @@ version '0.1-SNAPSHOT'
 
 mainClassName = "org.neo4j.extension.firehose.Server"
 
-sourceCompatibility = 1.7
+sourceCompatibility = 1.8
 
 repositories {
+//    mavenLocal()
     mavenCentral()
     maven { url "https://raw.github.com/neo4j-contrib/m2/master/releases" }
 }
 
 ext {
     neo4jVersion = "2.2.5"
+    jettyVersion = "9.2.4.v20141103"
 }
 
 /*
 shadowJar {
     dependencies {
-        exclude(dependency('org.neo4j.*:.*'))
-        exclude(dependency('commons.*:.*'))
-        exclude(dependency('org.apache.commons:.*'))
-        exclude(dependency('javax.ws.rs:.*'))
-        exclude(dependency('org.reflections:.*'))
-        exclude(dependency('org.jboss.*:.*'))
-        exclude(dependency('io.undertow:.*'))
-        exclude(dependency('org.apache.httpcomponents:.*'))
-        exclude(dependency('org.javassist:.*'))
-        exclude(dependency('javax.activation:.*'))
-        exclude(dependency('net.jcip:.*'))
-        exclude(dependency('org.jboss.spec.javax.annotation:.*'))
-        exclude(dependency('com.google.guava:.*'))
-        exclude(dependency('com.google.code.findbugs:.*'))
-        exclude(dependency('com.opencsv:.*'))
-
+        include(dependency('com.opencsv:opencsv:3.5'))
     }
 }
 */
@@ -59,6 +46,7 @@ dependencies {
     compile 'io.undertow:undertow-servlet:1.2.10.Final'
     compile 'org.reflections:reflections:0.9.10'
     compile 'commons-cli:commons-cli:1.3.1'
+    compile group: 'org.eclipse.jetty', name: 'jetty-util', version: jettyVersion
 
     testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
     testCompile group: 'org.neo4j.contrib', name: 'neo4j-spock-extension', version: '0.5.2'

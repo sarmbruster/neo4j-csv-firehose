@@ -1,4 +1,4 @@
-package org.neo4j.extension.firehose;
+package org.neo4j.extension.firehose.server;
 
 import io.undertow.Undertow;
 import org.apache.commons.cli.CommandLine;
@@ -12,6 +12,9 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Application;
 import java.util.Set;
 
+/**
+ * start a undertow server
+ */
 public class Server {
 
     public static void main(String[] args) throws ParseException {

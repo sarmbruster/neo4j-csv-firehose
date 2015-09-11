@@ -4,12 +4,17 @@ image::https://travis-ci.org/sarmbruster/neo4j-csv-firehose.svg?branch=master[[T
 
 neo4j-csv-firehose enables Neo4j's `LOAD CSV` Cypher command to load other from other datasources as well. It provides a Neo4j unmanaged extension doing on-the-fly conversion of the other datasource to csv - and can therefore act as input for `LOAD CSV`. Alternatively it can be run as standalone server.
 
-
 ## Installation
 
 This project uses [gradle](http://www.gradle.org) as build system. Since the gradle wrapper in included, there is no need to download anything beforehand.
 
-There are two distinct ways to use neo4j-csv-firehose. In case you're Neo4j server requires authentication ( check for `dbms.security.auth_enabled` in `neo4j-server.properties`) you have to use neo4j-csv-firehose as separate server. If you run Neo4j in embedded mode, also go with separate server deployment here. In all other cases deployment as unmanaged extension is the recommended way to go.
+There are three distinct ways to install neo4j-csv-firehose:
+
+* directly inside Neo4j server as unmanaged extension
+* as external server with undertow
+* as URLStreamHandler hooking directly into to JVM
+
+. In case you're Neo4j server requires authentication ( check for `dbms.security.auth_enabled` in `neo4j-server.properties`) you have to use neo4j-csv-firehose as separate server. If you run Neo4j in embedded mode, also go with separate server deployment here. In all other cases deployment as unmanaged extension is the recommended way to go.
 
 ### Installation within a Neo4j server instance (unmanaged extension)
 
@@ -35,7 +40,23 @@ Under the hoods a undertow server with jaxrs support is start. Before running th
 
 This starts up the server on localhost:8080.
 
-## Usage ##
+### Installation as URLStreamHandler
+
+CAUTION: the current implementation of Cypher and `LOAD CSV` explicitly filters for url types. This approach will only work if https://github.com/neo4j/neo4j/pull/5321 gets merged - which might happen for 2.3. In other words: this variant will not work with Neo4j <= 2.2.x
+
+Type
+
+    ./gradlew jar
+
+to build and copy (or symlink) the resulting file `./build/libs/neo4j-csv-firehose-0.1-SNAPSHOT.jar` to Neo4j's `plugins` folder.
+
+In `neo4j-wrapper.conf` configure URL handlers:
+
+     wrapper.java.additional=-Djava.protocol.handler.pkgs=org.neo4j.extension.firehose
+
+and restart Neo4j.
+
+## Usage
 
 A new REST endpoint for rendering JDBC datasource as csv is added:
 
@@ -45,12 +66,16 @@ For separate server deployment the URL is (hint `csv` is omitted):
 
      http://localhost:8080/jdbc?parameter1=value1&parameter2=value2....
 
+For URLStreamHandler style deployment the URLs look like
+
+     jdbc:mysql://localhost/mydb?parameter=value&...
+
 The following query parameters are available - remember to use proper url encoding for their values:
 
 |===
 | parameter name | description | mandatory
 
-| url      | the jdbc connection string, syntax depends on your jdbc driver, e.g. `jdbc:mysql://localhost/mydb` | yes
+| url      | the jdbc connection string, syntax depends on your jdbc driver, e.g. `jdbc:mysql://localhost/mydb` | yes, not used for URLStreamHandler variant
 | user     | database login for jdbc connection | no
 | password | database password for jdbc connection | no
 | table    | name of the database table to convert to csv. All columns and rows are used | either `table` or `sql`
@@ -74,7 +99,7 @@ When running as separate server use:
 
 ## known gotchas
 
-Running inside a Neo4j server (unamanaged extension) works only if the server has authentication disabled. In neo4j-server.properties set:
+WARNING: Running inside a Neo4j server (unamanaged extension) works only if the server has authentication disabled. In neo4j-server.properties set:
 
     dbms.security.auth_enabled=false
 
