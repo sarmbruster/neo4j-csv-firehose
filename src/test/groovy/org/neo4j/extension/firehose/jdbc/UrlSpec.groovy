@@ -49,6 +49,7 @@ class UrlSpec extends Specification {
         e.cause instanceof SQLException
     }
 
+    @Ignore("only used locally due to mysql dependency")
     def "access mysql db"() {
         when:
         def url = new URL("jdbc:mysql://localhost/neg?user=neg&password=neg&table=urkunde")
