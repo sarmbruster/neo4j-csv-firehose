@@ -20,7 +20,7 @@ There are three distinct ways to install neo4j-csv-firehose:
 
 To build the project just type:
 
-    ./graldew jar
+    ./gradlew jar
 
 Copy (or symlink) the resulting file `./build/libs/neo4j-csv-firehose-0.1-SNAPSHOT.jar` to Neo4j's `plugins` folder.
 
