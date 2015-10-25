@@ -7,18 +7,18 @@ plugins {
 group 'org.neo4j.extension'
 version '0.1-SNAPSHOT'
 
-mainClassName = "org.neo4j.extension.firehose.Server"
+mainClassName = "org.neo4j.extension.firehose.server.Server"
 
 sourceCompatibility = 1.8
 
 repositories {
-//    mavenLocal()
+    mavenLocal()
     mavenCentral()
     maven { url "https://raw.github.com/neo4j-contrib/m2/master/releases" }
 }
 
 ext {
-    neo4jVersion = "2.2.5"
+    neo4jVersion = "2.3.0"
     jettyVersion = "9.2.4.v20141103"
 }
 
@@ -44,6 +44,10 @@ dependencies {
     // for Server.java
     compile 'org.jboss.resteasy:resteasy-undertow:3.0.12.Final'
     compile 'io.undertow:undertow-servlet:1.2.10.Final'
+    compile 'us.fatehi:schemacrawler:12.04.02'
+    runtime 'com.sun.jersey:jersey-json:1.19'
+    runtime 'org.glassfish.jersey.media:jersey-media-json-jackson:2.19'
+    runtime 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.5.1'
     compile 'org.reflections:reflections:0.9.10'
     compile 'commons-cli:commons-cli:1.3.1'
     compile group: 'org.eclipse.jetty', name: 'jetty-util', version: jettyVersion
@@ -56,5 +60,16 @@ dependencies {
     testCompile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
 
     runtime 'mysql:mysql-connector-java:5.1.36'
+    runtime 'org.postgresql:postgresql:9.4-1200-jdbc41'
+    runtime 'org.apache.derby:derby:10.11.1.1'
 
 }
+
+/*
+        <dependency>
+            <groupId>us.fatehi</groupId>
+            <artifactId>schemacrawler</artifactId>
+            <version>12.04.02</version>
+        </dependency>
+
+ */
