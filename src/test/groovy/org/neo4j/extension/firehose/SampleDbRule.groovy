@@ -4,7 +4,7 @@ import groovy.sql.Sql
 import org.junit.rules.ExternalResource
 
 /**
- * @author Stefan Armbruster
+ * create a prepopulated in-memory H2 instance
  */
 class SampleDbRule extends ExternalResource {
 

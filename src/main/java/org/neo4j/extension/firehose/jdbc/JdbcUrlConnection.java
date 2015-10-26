@@ -5,11 +5,8 @@ import org.eclipse.jetty.util.UrlEncoded;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
-import java.security.Permission;
-import java.sql.*;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;

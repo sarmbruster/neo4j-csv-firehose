@@ -1,0 +1,2 @@
+org.neo4j.extension.firehose.AuthenticatorKernelExtensionFactory
+org.neo4j.extension.firehose.jdbc.FuckUrlAccessValidationExtensionFactory

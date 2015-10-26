@@ -2,7 +2,7 @@
 
 image::https://travis-ci.org/sarmbruster/neo4j-csv-firehose.svg?branch=master[alt="Travis CI Status", link="https://travis-ci.org/sarmbruster/neo4j-csv-firehose"]
 
-neo4j-csv-firehose enables Neo4j's `LOAD CSV` Cypher command to load other from other datasources as well. It provides a Neo4j unmanaged extension doing on-the-fly conversion of the other datasource to csv - and can therefore act as input for `LOAD CSV`. Alternatively it can be run as standalone server.
+neo4j-csv-firehose enables Neo4j's `LOAD CSV` Cypher command to load other from other datasources as well. It provides  on-the-fly conversion of the other datasource to csv - and can therefore act as input for `LOAD CSV`.
 
 ## Installation
 
@@ -13,8 +13,6 @@ There are three distinct ways to install neo4j-csv-firehose:
 * directly inside Neo4j server as unmanaged extension
 * as external server with undertow
 * as URLStreamHandler hooking directly into to JVM
-
-. In case you're Neo4j server requires authentication ( check for `dbms.security.auth_enabled` in `neo4j-server.properties`) you have to use neo4j-csv-firehose as separate server. If you run Neo4j in embedded mode, also go with separate server deployment here. In all other cases deployment as unmanaged extension is the recommended way to go.
 
 ### Installation within a Neo4j server instance (unmanaged extension)
 
@@ -30,7 +28,12 @@ Change configuration in `$NEO4J/conf/neo4j-server.properties`:
 
     org.neo4j.server.thirdparty_jaxrs_classes=org.neo4j.extension.firehose=/csv
 
-After a restart using `$NEO4J_HOME/bin/neo4j restart` the extensions are active.
+If your Neo4j server uses authentication (which it does by default), amend to `neo4j.properties`:
+
+    extension.csv.http.username=neo4j
+    extension.csv.http.password=<mypassword>
+
+After a restart using `$NEO4J_HOME/bin/neo4j restart` firehose is active.
 
 ### Installation as a separate server
 
@@ -42,13 +45,13 @@ This starts up the server on localhost:8080.
 
 ### Installation as URLStreamHandler
 
-CAUTION: the current implementation of Cypher and `LOAD CSV` explicitly filters for url types. This approach will only work if https://github.com/neo4j/neo4j/pull/5321 gets merged - which might happen for 2.3. In other words: this variant will not work with Neo4j <= 2.2.x
-
 Type
 
     ./gradlew jar
 
 to build and copy (or symlink) the resulting file `./build/libs/neo4j-csv-firehose-0.1-SNAPSHOT.jar` to Neo4j's `plugins` folder.
+
+Copy any JDBC driver jar files for your relational databases into the `plugins` folder as well. E.g. for mysql use http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.36/mysql-connector-java-5.1.36.jar.
 
 In `neo4j-wrapper.conf` configure URL handlers:
 
@@ -97,10 +100,6 @@ When running as separate server use:
 
     neo4j-sh (?)$ load csv with headers from "http://localhost:8080/jdbc?url=jdbc%3Amysql%3A%2F%2Flocalhost%2Fmydb&table=person&user=mydb&password=123" as line create (:Person {firstname: line.firstName, lastname: line.lastName});
 
-## known gotchas
+Running as URLStreamHandler:
 
-WARNING: Running inside a Neo4j server (unamanaged extension) works only if the server has authentication disabled. In neo4j-server.properties set:
-
-    dbms.security.auth_enabled=false
-
-
+    neo4j-sh (?)$ load csv with headers from "jdbc:mysql://localhost/mydb?table=person&user=mydb&password=123" as line create (:Person {firstname: line.firstName, lastname: line.lastName});

@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'org.neo4j.extension'
-version '0.1-SNAPSHOT'
+version '0.2-SNAPSHOT'
 
 mainClassName = "org.neo4j.extension.firehose.Server"
 
@@ -18,7 +18,7 @@ repositories {
 }
 
 ext {
-    neo4jVersion = "2.2.5"
+    neo4jVersion = "2.3.0"
     jettyVersion = "9.2.4.v20141103"
 }
 
@@ -35,7 +35,7 @@ configurations {
 }
 
 dependencies {
-    testCompile "org.codehaus.groovy:groovy-all:2.4.3"
+    testCompile "org.codehaus.groovy:groovy:2.4.5"
 
     compile 'net.sf.opencsv:opencsv:2.3' // same version is bundled with neo4j
 //    compile 'com.opencsv:opencsv:3.5'
@@ -49,12 +49,11 @@ dependencies {
     compile group: 'org.eclipse.jetty', name: 'jetty-util', version: jettyVersion
 
     testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
-    testCompile group: 'org.neo4j.contrib', name: 'neo4j-spock-extension', version: '0.5.2'
+    testCompile group: 'org.neo4j.contrib', name: 'neo4j-spock-extension', version: '0.6.0'
     testCompile group: 'org.neo4j', name: 'neo4j-community', version: neo4jVersion
     testCompile group: 'org.neo4j.app', name: 'neo4j-server', version: neo4jVersion
     testCompile 'com.h2database:h2:1.4.188'
     testCompile 'org.codehaus.groovy.modules.http-builder:http-builder:0.7.1'
 
     runtime 'mysql:mysql-connector-java:5.1.36'
-
 }

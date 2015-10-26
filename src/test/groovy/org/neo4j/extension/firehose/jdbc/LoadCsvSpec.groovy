@@ -4,10 +4,8 @@ import org.junit.Rule
 import org.neo4j.extension.firehose.SampleDbRule
 import org.neo4j.extension.spock.Neo4jResource
 import org.neo4j.graphdb.QueryExecutionException
-import spock.lang.Ignore
 import spock.lang.Specification
 
-@Ignore("this test requires https://github.com/neo4j/neo4j/pull/5321 being merged to go green.")
 class LoadCsvSpec extends Specification {
 
     @Rule
