@@ -103,4 +103,62 @@ WARNING: Running inside a Neo4j server (unamanaged extension) works only if the 
 
     dbms.security.auth_enabled=false
 
+## MetaData Endpoint
 
+There is an endpoint which returns the metadata from the database schema:
+
+----
+curl -i 'http://localhost:8080/jdbc/meta?url=jdbc:mysql://localhost/northwind?user=root&database=northwind'
+----
+
+It uses SchemaCrawler to access the information and returns it as JSON in this format:
+
+----
+{
+  "nodes": [
+    {
+      "filename": "Categories",
+      "labels": [
+        "Categories"
+      ],
+      "properties": [
+        {
+          "headerKey": "CategoryID",
+          "dataType": "string",
+          "neoKey": "CategoryID",
+          "primaryKey": true,
+          "index": true
+        },
+....
+        {
+          "headerKey": "Picture",
+          "dataType": "string",
+          "neoKey": "Picture",
+          "primaryKey": false,
+          "index": false
+        }
+      ]
+    },
+....
+  ],
+  "relationships": [
+    {
+      "filename": "CustomerCustomerDemo",
+      "name": "CUSTOMER_TYPE_ID",
+      "from": {
+        "fileKey": "CustomerTypeID",
+        "neoKey": "CustomerTypeID",
+        "filename": "CustomerCustomerDemo",
+        "label": "CustomerCustomerDemo"
+      },
+      "to": {
+        "fileKey": "CustomerTypeID",
+        "neoKey": "CustomerTypeID",
+        "filename": "CustomerDemographics",
+        "label": "CustomerDemographics"
+      }
+    },
+....
+  ]
+}
+----

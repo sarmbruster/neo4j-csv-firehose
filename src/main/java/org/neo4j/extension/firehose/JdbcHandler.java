@@ -1,15 +1,17 @@
 package org.neo4j.extension.firehose;
 
+import org.codehaus.jackson.map.ObjectMapper;
 import org.neo4j.extension.firehose.helper.JdbcHelper;
-import org.neo4j.extension.firehose.helper.JdbcMetaData;
 import org.neo4j.extension.firehose.helper.JdbcMetaHelper;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import java.io.IOException;
 import java.sql.*;
+import java.util.Map;
 import java.util.Properties;
 
 import static org.neo4j.extension.firehose.helper.StreamingHelper.*;
@@ -53,15 +55,15 @@ public class JdbcHandler {
         );
     }
 
+    private static ObjectMapper MAPPER = new ObjectMapper();
+
     @GET
     @Path("/meta")
     @Produces("application/json")
-    public JdbcMetaData metadata(
-            @Context UriInfo uriInfo,
-            @QueryParam("url") String jdbcString
-    ) {
+    public Response metadata(@Context UriInfo uriInfo, @QueryParam("url") String jdbcString) throws IOException {
         Properties props = parseUrlParameters(uriInfo);
-        return JdbcMetaHelper.metaInfo(jdbcString,props);
+        Map<String, Object> metaData = JdbcMetaHelper.metaInfo(jdbcString, props).toMap();
+        return Response.ok(MAPPER.writeValueAsString(metaData), MediaType.APPLICATION_JSON_TYPE).build();
     }
     
 }

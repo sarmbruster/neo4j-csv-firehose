@@ -27,12 +27,12 @@ class MetaDataFromJDBCSpec extends Specification {
         def table = metadata.nodes[0]
         table.filename == filename
         table.labels == labels
-        table.@properties.size() == properties
+        table.properties.size() == properties
 
-        def prop = table.@properties
+        def prop = table.properties
         prop*.headerKey == headerKey
         prop*.primaryKey == primaryKey
-        prop*.dataType.collect{it.toString()} == type
+        prop*.dataType == type
 
         where:
         database                            | nodes | filename | labels     | properties | headerKey      | neoKey        | primaryKey   | type

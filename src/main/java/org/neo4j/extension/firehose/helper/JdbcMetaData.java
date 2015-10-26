@@ -1,60 +1,38 @@
 package org.neo4j.extension.firehose.helper;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 import static java.util.Arrays.asList;
 
 public class JdbcMetaData {
-	public List<JdbcMetaDataNode> nodes = new ArrayList<>();
-	public List<JdbcMetaDataRelationship> relationships = new ArrayList<>();
+    public List<Map> nodes = new ArrayList<>();
+    public List<Map> relationships = new ArrayList<>();
 
-	public static class JdbcMetaDataNode {
-		public String filename;
-        public List<String> labels = new ArrayList<>();
-        public List<JdbcMetaDataProperty> properties = new ArrayList<>();
-	}
-    public static class JdbcMetaDataProperty {
-        public String headerKey;
-        public String neoKey;
-        public Types dataType;
-        public boolean index;
-        public boolean primaryKey;
-        public boolean foreignKey;
-        public boolean skip;
+    public Map<String, Object> toMap() {
+        return map("nodes", nodes, "relationships", relationships);
     }
-    public static class JdbcMetaDataRelationship {
-        public String filename;
-        public String name;
-        public JdbcMetaDataRelationshipNode from;
-        public JdbcMetaDataRelationshipNode to;
-    }
-	public static class JdbcMetaDataRelationshipNode {
-        public String filename;
-        public String neoKey;
-        public String fileKey;
-        public String label;
-	}
 
-	public enum Types {
-		integer {
-			@Override
-			public String toString() {
-				return "int";
-			}
-		},
+    public enum Types {
+        integer {
+            @Override
+            public String toString() {
+                return "int";
+            }
+        },
         numeric {
-			@Override
-			public String toString() {
-				return "float";
-			}
-		}, string, bool {
-			@Override
-			public String toString() {
-				return "boolean";
-			}
-		};
+            @Override
+            public String toString() {
+                return "float";
+            }
+        }, string, bool {
+            @Override
+            public String toString() {
+                return "boolean";
+            }
+        };
 
         public static Types from(String value) {
             if (value == null) return string;
@@ -63,44 +41,46 @@ public class JdbcMetaData {
             }
             return string;
         }
-	}
+    }
 
-    public void add(TableInfo table, Rules rules) {
+    public Map<String, Object> add(TableInfo table, Rules rules) {
         if (rules.isNode(table)) {
             addNode(table, rules);
         } else {
             addRelationship(table, rules);
         }
+        return map("nodes", nodes, "relationships", relationships);
     }
 
     private void addRelationship(TableInfo table, Rules rules) {
         if (table.fks.isEmpty()) return;
-        JdbcMetaDataRelationship rel = new JdbcMetaDataRelationship();
         String tableName = table.table;
-        relationships.add(rel);
-        rel.filename = tableName;
-        rel.name = rules.relTypeFor(tableName);
         List<Map.Entry<List<String>, String>> fks = new ArrayList<>(table.fks.entrySet());
+        // todo multi-key
         Map.Entry<List<String>, String> from = fks.get(0);
-        // todo multi-key
-        rel.from = createRelationshipNode(from.getValue(), from.getKey().get(0), rules);
         Map.Entry<List<String>, String> to = fks.get(1);
-        // todo multi-key
-        rel.to = createRelationshipNode(to.getValue(), to.getKey().get(0), rules);
+
+        Map rel = map(
+                "filename", tableName,
+                "name", rules.relTypeFor(tableName),
+                "from", createRelationshipNode(from.getValue(), from.getKey().get(0), rules),
+                "to", createRelationshipNode(to.getValue(), to.getKey().get(0), rules));
         relationships.add(rel);
     }
 
     private void addNode(TableInfo table, Rules rules) {
-        JdbcMetaDataNode node = new JdbcMetaDataNode();
         String tableName = table.table;
-        node.filename = tableName;
-        node.labels = asList(rules.labelsFor(table));
+        List<Map> properties = new ArrayList<>();
+        Map node = map(
+                "filename", tableName,
+                "labels", asList(rules.labelsFor(table)),
+                "properties", properties);
         for (String field : table.pk) {
-            node.properties.add(createJdbcMetaDataProperty(table, rules, field, true));
+            properties.add(createJdbcMetaDataProperty(table, rules, field, true));
         }
         for (String field : table.fields) {
-            if (!rules.skipPrimaryKey(tableName,field) && table.pk.contains(field)) continue;
-            node.properties.add(createJdbcMetaDataProperty(table, rules, field, false));
+            if (!rules.skipPrimaryKey(tableName, field) && table.pk.contains(field)) continue;
+            properties.add(createJdbcMetaDataProperty(table, rules, field, false));
         }
 
         for (Map.Entry<List<String>, String> entry : table.fks.entrySet()) {
@@ -108,7 +88,7 @@ public class JdbcMetaData {
             String target = entry.getValue();
             // todo do we really have to add them as properties in neo?
             for (String field : fields) {
-                node.properties.add(createJdbcMetaDataProperty(table, rules, field, false));
+                properties.add(createJdbcMetaDataProperty(table, rules, field, false));
 
                 addRelationship(tableName, target, field, rules);
             }
@@ -117,32 +97,38 @@ public class JdbcMetaData {
     }
 
     private void addRelationship(String tableName, String target, String field, Rules rules) {
-        JdbcMetaDataRelationship rel = new JdbcMetaDataRelationship();
-        rel.filename = tableName;
-        rel.name = rules.relTypeFor(field);
-        rel.from = createRelationshipNode(tableName, field, rules);
-        rel.to = createRelationshipNode(target, field, rules);
+        Map rel = map(
+                "filename", tableName,
+                "name", rules.relTypeFor(field),
+                "from", createRelationshipNode(tableName, field, rules),
+                "to", createRelationshipNode(target, field, rules));
         relationships.add(rel);
     }
 
-    private JdbcMetaDataRelationshipNode createRelationshipNode(String tableName, String field, Rules rules) {
-        JdbcMetaDataRelationshipNode node = new JdbcMetaDataRelationshipNode();
-        node.fileKey = field;
-        node.neoKey = field;
-        node.filename = tableName;
-        node.label = rules.labelFor(tableName);
-        return node;
+    private Map createRelationshipNode(String tableName, String field, Rules rules) {
+        return map(
+                "fileKey", field,
+                "neoKey", field,
+                "filename", tableName,
+                "label", rules.labelFor(tableName));
     }
 
-    private JdbcMetaDataProperty createJdbcMetaDataProperty(TableInfo table, Rules rules, String field, boolean pk) {
-        JdbcMetaDataProperty prop = new JdbcMetaDataProperty();
+    private Map createJdbcMetaDataProperty(TableInfo table, Rules rules, String field, boolean pk) {
         String[] parts = field.split(":");
-        prop.headerKey = parts[0];
-        prop.dataType = parts.length == 1 ? Types.string : Types.from(parts[1]);
-        prop.neoKey = rules.propertyNameFor(table,field);
-        prop.primaryKey = pk;
-        prop.index = pk;
-        return prop;
+        return map(
+                "headerKey", parts[0],
+                "dataType", (parts.length == 1 ? Types.string : Types.from(parts[1])).toString(),
+                "neoKey", rules.propertyNameFor(table, field),
+                "primaryKey", pk,
+                "index", pk);
+    }
+
+    public static Map<String, Object> map(Object... objects) {
+        Map<String, Object> map = new LinkedHashMap<>();
+        for (int i = 0; i < objects.length; i += 2) {
+            map.put((String) objects[i], objects[i + 1]);
+        }
+        return map;
     }
 }
 
