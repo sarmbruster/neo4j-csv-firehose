@@ -1,13 +1,17 @@
 package org.neo4j.extension.firehose;
 
+import org.codehaus.jackson.map.ObjectMapper;
 import org.neo4j.extension.firehose.helper.JdbcHelper;
+import org.neo4j.extension.firehose.helper.JdbcMetaHelper;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import java.io.IOException;
 import java.sql.*;
+import java.util.Map;
 import java.util.Properties;
 
 import static org.neo4j.extension.firehose.helper.StreamingHelper.*;
@@ -19,11 +23,7 @@ import static org.neo4j.extension.firehose.helper.StreamingHelper.*;
 @Path("/jdbc")
 public class JdbcHandler {
 
-    @GET
-    public Response jdbcAsCsv(
-            @Context UriInfo uriInfo,
-            @QueryParam("url") String jdbcString
-    ) {
+    private Properties parseUrlParameters(UriInfo uriInfo) {
         final Properties props = new Properties();
         uriInfo.getQueryParameters().forEach((key, values) -> {
             if (values.size() > 1) {
@@ -31,7 +31,17 @@ public class JdbcHandler {
             }
             props.put(key, values.get(0));
         });
+        return props;
+    }
 
+    @GET
+    @Path("/")
+    public Response jdbcAsCsv(
+            @Context UriInfo uriInfo,
+            @QueryParam("url") String jdbcString
+    ) {
+
+        Properties props = parseUrlParameters(uriInfo);
         return streamCsvResponse(
                 csvWriter -> JdbcHelper.runSqlAndConsume(jdbcString, props, resultSet -> {
                     try {
@@ -45,4 +55,15 @@ public class JdbcHandler {
         );
     }
 
+    private static ObjectMapper MAPPER = new ObjectMapper();
+
+    @GET
+    @Path("/meta")
+    @Produces("application/json")
+    public Response metadata(@Context UriInfo uriInfo, @QueryParam("url") String jdbcString) throws IOException {
+        Properties props = parseUrlParameters(uriInfo);
+        Map<String, Object> metaData = JdbcMetaHelper.metaInfo(jdbcString, props).toMap();
+        return Response.ok(MAPPER.writeValueAsString(metaData), MediaType.APPLICATION_JSON_TYPE).build();
+    }
+    
 }

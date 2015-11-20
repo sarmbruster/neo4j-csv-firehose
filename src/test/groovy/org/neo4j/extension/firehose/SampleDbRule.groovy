@@ -9,7 +9,8 @@ import org.junit.rules.ExternalResource
 class SampleDbRule extends ExternalResource {
 
     Sql db
-    String jdbc = "jdbc:h2:mem:devDb"
+    String schema = "devDb"
+    String jdbc = "jdbc:h2:mem:${schema}"
 
     @Override
     protected void before() throws Throwable {

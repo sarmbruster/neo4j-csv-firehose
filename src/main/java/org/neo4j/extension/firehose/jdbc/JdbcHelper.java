@@ -1,4 +1,4 @@
-package org.neo4j.extension.firehose.helper;
+package org.neo4j.extension.firehose.jdbc;
 
 import org.neo4j.function.Consumer;
 
