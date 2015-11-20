@@ -1,11 +1,8 @@
 package org.neo4j.extension.firehose.jdbc
 
-import groovy.json.JsonSlurper
 import org.junit.ClassRule
-import org.junit.Rule
 import org.neo4j.extension.firehose.SampleDbRule
-import org.neo4j.extension.firehose.helper.JdbcMetaHelper
-import org.neo4j.extension.spock.Neo4jServerResource
+import org.neo4j.extension.firehose.jdbc.meta.JdbcMetaHelper
 import spock.lang.Shared
 import spock.lang.Specification
 

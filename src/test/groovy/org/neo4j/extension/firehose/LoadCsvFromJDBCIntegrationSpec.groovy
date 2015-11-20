@@ -1,6 +1,5 @@
 package org.neo4j.extension.firehose
 
-import groovy.json.JsonSlurper
 import org.junit.ClassRule
 import org.junit.Rule
 import org.neo4j.extension.spock.Neo4jServerResource

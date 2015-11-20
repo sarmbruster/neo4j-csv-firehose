@@ -1,15 +1,15 @@
 package org.neo4j.extension.firehose.jdbc.meta;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.*;
-
 import schemacrawler.schema.*;
 import schemacrawler.schemacrawler.InclusionRule;
 import schemacrawler.schemacrawler.SchemaCrawlerException;
 import schemacrawler.schemacrawler.SchemaCrawlerOptions;
 import schemacrawler.schemacrawler.SchemaInfoLevel;
 import schemacrawler.utility.SchemaCrawlerUtility;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.*;
 
 /**
  * @author mh

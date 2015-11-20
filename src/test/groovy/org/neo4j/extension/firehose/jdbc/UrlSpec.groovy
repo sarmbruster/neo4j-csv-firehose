@@ -1,6 +1,5 @@
 package org.neo4j.extension.firehose.jdbc
 
-import groovy.json.JsonSlurper
 import org.junit.Rule
 import org.neo4j.extension.firehose.SampleDbRule
 import spock.lang.Ignore

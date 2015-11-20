@@ -1,6 +1,7 @@
 package org.neo4j.extension.firehose.jdbc.meta;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.Properties;
 
 public class JdbcMetaHelper {

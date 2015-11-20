@@ -1,20 +1,23 @@
 package org.neo4j.extension.firehose;
 
 import org.codehaus.jackson.map.ObjectMapper;
-import org.neo4j.extension.firehose.helper.JdbcHelper;
-import org.neo4j.extension.firehose.helper.JdbcMetaHelper;
+import org.neo4j.extension.firehose.jdbc.JdbcHelper;
+import org.neo4j.extension.firehose.jdbc.meta.JdbcMetaHelper;
 
-import javax.ws.rs.*;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import java.io.IOException;
-import java.sql.*;
+import java.sql.SQLException;
 import java.util.Map;
 import java.util.Properties;
 
-import static org.neo4j.extension.firehose.helper.StreamingHelper.*;
+import static org.neo4j.extension.firehose.helper.StreamingHelper.streamCsvResponse;
 
 /**
  * unmanaged extension to neo4j exposing jdbc as a csv file. Cypher's LOAD CSV can use that by doing

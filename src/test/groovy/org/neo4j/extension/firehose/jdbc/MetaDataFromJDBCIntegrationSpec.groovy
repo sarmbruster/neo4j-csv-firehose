@@ -5,11 +5,8 @@ import org.junit.ClassRule
 import org.junit.Rule
 import org.neo4j.extension.firehose.SampleDbRule
 import org.neo4j.extension.spock.Neo4jServerResource
-import org.neo4j.graphdb.QueryExecutionException
 import spock.lang.Shared
 import spock.lang.Specification
-
-import static java.net.URLEncoder.encode
 
 class MetaDataFromJDBCIntegrationSpec extends Specification {
 
