@@ -18,7 +18,7 @@ repositories {
 }
 
 ext {
-    neo4jVersion = "2.3.0"
+    neo4jVersion = "2.3.1"
     jettyVersion = "9.2.4.v20141103"
 }
 
