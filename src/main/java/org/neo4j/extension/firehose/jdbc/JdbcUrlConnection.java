@@ -3,7 +3,6 @@ package org.neo4j.extension.firehose.jdbc;
 import org.eclipse.jetty.util.MultiMap;
 import org.eclipse.jetty.util.UrlEncoded;
 import org.neo4j.extension.firehose.ConvertCsvInputStream;
-import org.neo4j.extension.firehose.helper.JdbcHelper;
 
 import java.io.IOException;
 import java.io.InputStream;
