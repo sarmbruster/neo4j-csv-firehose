@@ -15,7 +15,7 @@ public class JdbcHelper {
      * @param props properties to pass in for getting the connection
      * @param resultConsumer a function that consumes the resultset
      */
-    public static void runSqlAndConsume( String jdbcString, Properties props, Consumer<ResultSet> resultConsumer)  {
+    public static void runSqlAndConsume( String jdbcString, Properties props, Consumer<ResultSet> resultConsumer) {
         try (Connection connection = DriverManager.getConnection(jdbcString, props)) {
             try (Statement statement = connection.createStatement()) {
 
@@ -30,6 +30,7 @@ public class JdbcHelper {
                 }
             }
         } catch (SQLException e) {
+            e.printStackTrace();
             throw new RuntimeException(e);
         }
     }

@@ -2,6 +2,8 @@ package org.neo4j.extension.firehose.jdbc;
 
 import org.eclipse.jetty.util.MultiMap;
 import org.eclipse.jetty.util.UrlEncoded;
+import org.neo4j.extension.firehose.ConvertCsvInputStream;
+import org.neo4j.extension.firehose.helper.JdbcHelper;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -44,7 +46,16 @@ public class JdbcUrlConnection extends URLConnection {
 
     @Override
     public InputStream getInputStream() throws IOException {
-        return new JdbcInputStream(jdbcBase, jdbcProperties);
+        return new ConvertCsvInputStream( (csvWriter, isReady) -> {
+            JdbcHelper.runSqlAndConsume(jdbcBase, jdbcProperties, resultSet -> {
+                try {
+                    csvWriter.writeAll(resultSet, true);
+                    isReady[0] = true;
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            });
+        });
     }
 
 }
