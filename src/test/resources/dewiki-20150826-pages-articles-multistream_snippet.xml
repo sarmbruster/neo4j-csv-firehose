@@ -1,0 +1,477 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="de">
+  <siteinfo>
+    <sitename>Wikipedia</sitename>
+    <dbname>dewiki</dbname>
+    <base>https://de.wikipedia.org/wiki/Wikipedia:Hauptseite</base>
+    <generator>MediaWiki 1.26wmf19</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Medium</namespace>
+      <namespace key="-1" case="first-letter">Spezial</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Diskussion</namespace>
+      <namespace key="2" case="first-letter">Benutzer</namespace>
+      <namespace key="3" case="first-letter">Benutzer Diskussion</namespace>
+      <namespace key="4" case="first-letter">Wikipedia</namespace>
+      <namespace key="5" case="first-letter">Wikipedia Diskussion</namespace>
+      <namespace key="6" case="first-letter">Datei</namespace>
+      <namespace key="7" case="first-letter">Datei Diskussion</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki Diskussion</namespace>
+      <namespace key="10" case="first-letter">Vorlage</namespace>
+      <namespace key="11" case="first-letter">Vorlage Diskussion</namespace>
+      <namespace key="12" case="first-letter">Hilfe</namespace>
+      <namespace key="13" case="first-letter">Hilfe Diskussion</namespace>
+      <namespace key="14" case="first-letter">Kategorie</namespace>
+      <namespace key="15" case="first-letter">Kategorie Diskussion</namespace>
+      <namespace key="100" case="first-letter">Portal</namespace>
+      <namespace key="101" case="first-letter">Portal Diskussion</namespace>
+      <namespace key="828" case="first-letter">Modul</namespace>
+      <namespace key="829" case="first-letter">Modul Diskussion</namespace>
+      <namespace key="2300" case="first-letter">Gadget</namespace>
+      <namespace key="2301" case="first-letter">Gadget talk</namespace>
+      <namespace key="2302" case="case-sensitive">Gadget definition</namespace>
+      <namespace key="2303" case="case-sensitive">Gadget definition talk</namespace>
+      <namespace key="2600" case="first-letter">Thema</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Alan Smithee</title>
+    <ns>0</ns>
+    <id>1</id>
+    <revision>
+      <id>142319451</id>
+      <parentid>139794915</parentid>
+      <timestamp>2015-05-21T09:11:04Z</timestamp>
+      <contributor>
+        <username>JobuBot</username>
+        <id>2158397</id>
+      </contributor>
+      <minor />
+      <comment>Bot: [[Vorlage:IMDb Name]] durch [[Vorlage:IMDb]] ersetzt</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">'''Alan Smithee''' steht als [[Pseudonym]] für einen fiktiven Regisseur, der Filme verantwortet, bei denen der eigentliche [[Regisseur]] seinen Namen nicht mit dem Werk in Verbindung gebracht haben möchte. Von 1968 bis 2000 wurde es von der [[Directors Guild of America]] (DGA) für solche Situationen empfohlen, seither ist es '''Thomas Lee'''.&lt;ref&gt;[[Los Angeles Times|latimes]].com: [http://articles.latimes.com/2000/jan/15/entertainment/ca-54271 ''Name of Director Smithee Isn't What It Used to Be''], zuletzt geprüft am 2. April 2011&lt;/ref&gt; ''Alan Smithee'' ist jedoch weiterhin in Gebrauch.
+
+Alternative Schreibweisen sind unter anderem die Ursprungsvariante ''Al&lt;u&gt;len&lt;/u&gt; Smithee'' sowie ''Alan Sm&lt;u&gt;y&lt;/u&gt;thee'' und ''A&lt;u&gt;dam&lt;/u&gt; Smithee''. Auch zwei teilweise asiatisch anmutende Schreibweisen ''Alan Smi Thee'' und ''Sumishii Aran'' gehören – so die [[Internet Movie Database]] – dazu.&lt;ref name=&quot;IMDb&quot;&gt;[http://www.imdb.com/name/nm0000647/ Eigener Eintrag für ''Alan Smithee'' in der IMDb]&lt;/ref&gt;
+
+== Geschichte ==
+=== Entstehung ===
+Das Pseudonym entstand 1968 infolge der Arbeiten am Western-Film ''Death of a Gunfighter'' (deutscher Titel ''[[Frank Patch – Deine Stunden sind gezählt]]''). Regisseur [[Robert Totten]] und Hauptdarsteller [[Richard Widmark]] gerieten in einen Streit, woraufhin [[Don Siegel]] als neuer Regisseur eingesetzt wurde.
+
+Der Film trug nach Abschluss der Arbeiten noch deutlich Tottens [[Manier (Stil)|Handschrift]], der auch mehr Drehtage als Siegel daran gearbeitet hatte, weshalb dieser die Nennung seines Namens als Regisseur ablehnte. Totten selbst lehnte aber ebenfalls ab. Als Lösung wurde  ''Allen Smithee'' als ein möglichst einzigartiger Name gewählt (bei der späteren Variante ''Alan Smithee'' war das [[Anagramm]] ''The Alias Men'' vermutlich kein Entstehungsgrund).&lt;ref&gt;[http://www.imdb.com/name/nm0000647/bio ''Biography for Alan Smithee''] in der Internet Movie Database&lt;/ref&gt;
+
+In den zeitgenössischen Kritiken wurde der Regisseur u.&amp;nbsp;a. von [[Roger Ebert]] mit den Worten gelobt: {{Zitat-en|Director Allen Smithee, a name I’m not familiar with, allows his story to unfold naturally. He never preaches, and he never lingers on the obvious. His characters do what they have to do.&lt;ref&gt;rogerebert.[[Chicago Sun-Times|suntimes]].com: [http://rogerebert.suntimes.com/apps/pbcs.dll/article?AID=/19690512/REVIEWS/905120301/1023 ''Death of a Gunfighter''], zuletzt geprüft am 2. April 2011&lt;/ref&gt;|Übersetzung=Regisseur Alan Smithee, ein Name, der mir nicht vertraut ist, erlaubt es seiner Handlung, sich natürlich zu entfalten. Er predigt niemals, und er verweilt nie beim Offensichtlichen. Seine Charaktere tun, was sie tun müssen.}}
+
+=== Aufdeckung und Abkehr ===
+1997 kam die Parodie ''An Alan Smithee Film: Burn Hollywood Burn'' (deutscher Titel ''[[Fahr zur Hölle Hollywood]]'') in die Kinos, was das Pseudonym einem größeren Publikum bekannt machte, nicht zuletzt weil [[Arthur Hiller (Regisseur)|Arthur Hiller]], der eigentliche Regisseur des Films selbst seinen Namen zurückzog und analog zum Filmtitel das Pseudonym ''Alan Smithee'' benutzte. Der Film gilt als einer der schlechtesten Filme der 1990er Jahre und gewann fünf [[Goldene Himbeere]]n.
+
+Der Film ''[[Supernova (2000)|Supernova]]'' ist der erste Post-Smithee-Film, dort führte ein gewisser ''Thomas Lee'' alias [[Walter Hill]] die Regie.
+&lt;!-- fand nur einen für den von 1990, siehe ''[[Das Kindermädchen]]'':
+„Smithee wurde allerdings auch nach ''Supernova'' gesichtet, in einem Film namens ''The Guardian''.“
+--&gt;
+
+== Verwendung ==
+Die Verwendung dieses oder eines anderen Pseudonyms ist für Mitglieder der DGA streng reglementiert. Ein Regisseur, der für einen von ihm gedrehten Film seinen Namen nicht hergeben möchte, hat nach Sichtung des fertigen Films drei Tage Zeit, anzuzeigen, dass er ein Pseudonym verwenden möchte. Der Rat der DGA entscheidet binnen zwei Tagen über das Anliegen. Erhebt die Produktionsfirma Einspruch, entscheidet ein Komitee aus Mitgliedern der DGA und der Vereinigung der Film- und Fernsehproduzenten, ob der Regisseur ein Pseudonym angeben darf. Über die Beantragung muss der Regisseur Stillschweigen halten, ebenso darf er den fertigen Film nicht öffentlich kritisieren, wenn die DGA ihm die Verwendung eines Pseudonyms zugesteht.&lt;ref&gt;Siehe zu diesen Regelungen [http://www.dga.org/~/media/Files/Contracts/Agreements/2008%20BA/008ba2008article8.pdf Artikel 8, Abschnitt 8-211 des ''Basic Agreement''] (PDF; 125&amp;nbsp;kB) der DGA von 2008, abgerufen am 25. April 2012&lt;/ref&gt; Ein Antrag des Regisseurs auf Pseudonymisierung kann abgelehnt werden, so durfte [[Tony Kaye (Regisseur)|Tony Kaye]] den Namen Smithee bei dem Film ''[[American History X]]'' nicht einsetzen, obwohl er den Antrag stellte.
+
+Auch bei nicht-US-amerikanischen Produktionen wird der Name verwendet, wie etwa beim [[Pilotfilm]] der Fernsehserie ''[[Schulmädchen (Fernsehserie)|Schulmädchen]]''. 2007 sendete die ARD am 8. und 9. August den zweiteiligen TV-Film ''Paparazzo''. Auch in diesem Werk erscheint anstatt des eigentlichen Regisseurs [[Stephan Wagner (Regisseur)|Stephan Wagner]] Alan Smithee im Abspann.
+
+Zu den Regisseuren, die das Pseudonym benutzt haben, gehören:
+* [[Don Siegel]] und [[Robert Totten]] (für ''[[Frank Patch – Deine Stunden sind gezählt]]''),
+* [[David Lynch]] (für die dreistündige Fernsehfassung von ''[[Der Wüstenplanet (Film)|Der Wüstenplanet]]''),
+* [[Chris Christensen]] (''The Omega Imperative''),
+* [[Stuart Rosenberg]] (für ''Let’s Get Harry''),
+* [[Richard C. Sarafian]] (für ''[[Starfire]]''),
+* [[Dennis Hopper]] (für ''[[Catchfire]]''),
+* [[Arthur Hiller (Regisseur)|Arthur Hiller]] (für ''[[An Alan Smithee Film: Burn Hollywood Burn]]''),
+* [[Rick Rosenthal]] (''Birds II'') und
+* [[Kevin Yagher]] (''[[Hellraiser IV – Bloodline]]'').
+
+Der Pilotfilm der Serie ''[[MacGyver]]'' und die fünfte Folge der ersten Staffel führen einen Alan Smithee als Regisseur. Auf der TV-Serien-Seite TV Rage wird Jerrold Freedman als Regisseur des Pilotfilms angegeben. Der Regisseur der fünften Folge ist unbekannt.
+
+Zu den Drehbuchautoren, die das Pseudonym benutzt haben, gehören:
+* [[Sam Raimi]] und [[Ivan Raimi]] (die das Drehbuch zu ''Die total beknackte Nuß'' als „Alan Smithee, Jr.“ und „Alan Smithee, Sr.“ schrieben)
+
+Auch in Computerspielen wird dieses Pseudonym angegeben:
+* Im Abspann des Ego-Shooters ''Marine Sharpshooter IV'' aus dem Jahr 2008 wird als Art Director des Spiels „Alan Smithee“ genannt.&lt;ref&gt;http://einestages.spiegel.de/external/ShowTopicAlbumBackground/a13641/l26/l0/F.html#featuredEntry&lt;/ref&gt;
+
+2014 produzierte die [[New York City|New Yorker]] Performance-Kompanie [[Big Dance Theater]] ''Alan Smithee Directed this Play'', das im August des Jahres auch in Berlin bei [[Tanz im August]] aufgeführt wurde. &lt;ref&gt;''Alan Smithee ist schuld!'' in [[Frankfurter Allgemeine Sonntagszeitung]] vom 17. August 2014, Seite 36&lt;/ref&gt;
+
+== Literatur ==
+* Jeremy Braddock, Stephen Hock (Hrsg.): ''Directed by Allen Smithee.'' Foreword by Andrew Sarris. University of Minnesota Press, Minneapolis, London 2001, ISBN 0-8166-3534-X.
+
+== Weblinks ==
+* {{IMDb|nm0000647}}
+* [http://www.abc.net.au/rn/arts/atoday/stories/s353584.htm Artikel über Smithee von ABC Online (englisch)]
+* [http://einestages.spiegel.de/static/topicalbumbackground/13641/der_mann_der_niemals_lebte.html Der Mann, der niemals lebte, Spiegel Online einestages]
+* [http://dradiowissen.de/beitrag/alan-smithee-die-film-legende-lebt Alan Smithee lebt!, DRadio Wissen]
+
+== Referenzen ==
+&lt;references /&gt;
+
+{{Normdaten|TYP=p|GND=123396956}}
+
+[[Kategorie:Fiktive Person|Smithee, Alan]]
+[[Kategorie:Pseudonym]]
+[[Kategorie:Sammelpseudonym|Smithee, Alan]]
+[[Kategorie:Werk von Alan Smithee]]</text>
+      <sha1>11r6q3qtt9dogsxqw009ugdsgg6e27r</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Actinium</title>
+    <ns>0</ns>
+    <id>3</id>
+    <revision>
+      <id>141441326</id>
+      <parentid>140401572</parentid>
+      <timestamp>2015-04-24T08:34:39Z</timestamp>
+      <contributor>
+        <username>Mika2001</username>
+        <id>194963</id>
+      </contributor>
+      <comment>Gruppeneinteilung  nach IUPAC</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve">{{Infobox Chemisches Element
+&lt;!--- Periodensystem ---&gt;
+| Name= Actinium
+| Symbol= Ac
+| Ordnungszahl= 89
+| Serie= Üm
+| Gruppe = 3
+| Periode = 7
+| Block= d
+&lt;!--- Allgemein ---&gt;
+| Aussehen=silbrig
+| CAS = 7440-34-8
+| Massenanteil=6 · 10&lt;sup&gt;−14&lt;/sup&gt;&amp;nbsp;ppm&lt;ref name=&quot;Harry H. Binder&quot;&gt;Harry H. Binder: ''Lexikon der chemischen Elemente'', S. Hirzel Verlag, Stuttgart 1999, ISBN 3-7776-0736-3.&lt;/ref&gt;
+&lt;!--- Atomar ---&gt;
+| Hauptquelle = &lt;ref&gt;Die Werte für die Eigenschaften (Infobox) sind, wenn nicht anders angegeben, aus [http://www.webelements.com/actinium/ www.webelements.com (Actinium)] entnommen.&lt;/ref&gt;
+| Atommasse= 227,0278
+| Atomradius= 195
+| AtomradiusBerechnet= 
+| KovalenterRadius= 215
+| VanDerWaalsRadius= 
+| Elektronenkonfiguration= &amp;#91;[[Radon|Rn]]&amp;#93; 6[[D-Orbital|d]]&lt;sup&gt;1&lt;/sup&gt; 7[[S-Orbital|s]]&lt;sup&gt;2&lt;/sup&gt;
+| Austrittsarbeit= 
+| Ionisierungsenergie_1= 499
+| Ionisierungsenergie_2= 1170
+| Ionisierungsenergie_3=
+| Ionisierungsenergie_4=
+&lt;!--- Physikalisch ---&gt;
+| Aggregatzustand=fest
+| Modifikationen= 
+| Kristallstruktur= [[Kubisches Kristallsystem|kubisch flächenzentriert]]
+| Dichte=10,07 g/cm&lt;sup&gt;3&lt;/sup&gt;
+| RefTempDichte_K= 
+| Mohshärte= 
+| Magnetismus= 
+| Schmelzpunkt_K= 1323
+| Schmelzpunkt_C= 1050
+| Siedepunkt_K= 3573 K
+| Siedepunkt_C= 3300
+| MolaresVolumen= 22,55 · 10&lt;sup&gt;−6&lt;/sup&gt;
+| Verdampfungswärme= 400 kJ/mol
+| Schmelzwärme= 14
+| Dampfdruck=
+| RefTempDampfdruck_K=
+| Schallgeschwindigkeit= 
+| RefTempSchallgeschwindigkeit_K=
+| SpezifischeWärmekapazität= &lt;!--27,2--&gt; 
+| ElektrischeLeitfähigkeit= 
+| Wärmeleitfähigkeit= 12
+&lt;!--- Chemisch ---&gt;
+| Oxidationszustände= 3
+| Oxide= 
+| Basizität= mäßig basisch
+| Normalpotential=  −2,13 [[Volt|V]]&lt;br /&gt;(Ac&lt;sup&gt;3+&lt;/sup&gt; + 3&amp;nbsp;e&lt;sup&gt;−&lt;/sup&gt; → Ac)
+| Elektronegativität= 1,1
+| Quelle GHS-Kz   = NV
+| GHS-Piktogramme = {{GHS-Piktogramme|/}}
+| GHS-Signalwort  = 
+| H               = {{H-Sätze|/}}
+| EUH             = {{EUH-Sätze|/}}
+| P               = {{P-Sätze|/}}
+| Quelle P        = 
+| Quelle GefStKz  = NV
+| Gefahrensymbole = {{Gefahrensymbole|/}} 
+| R               = {{R-Sätze|/}} 
+| S               = {{S-Sätze|/}}
+| Radioaktiv = Ja
+&lt;!--- Isotope ---&gt;
+| Isotope=
+{{Infobox Chemisches Element/Isotop
+| Massenzahl= 224
+| Symbol= Ac
+| NH= 0
+| Halbwertszeit= 2,9 [[Stunde|h]]
+| AnzahlZerfallstypen= 3
+| Zerfallstyp1ZM= [[Elektronen-Einfang|ε]]
+| Zerfallstyp1ZE= 1,403
+| Zerfallstyp1ZP= [[Radium|&lt;sup&gt;224&lt;/sup&gt;Ra]]
+| Zerfallstyp2ZM= [[Alphastrahlung|α]]
+| Zerfallstyp2ZE= 9,100
+| Zerfallstyp2ZP= [[Francium|&lt;sup&gt;220&lt;/sup&gt;Fr]]
+| Zerfallstyp3ZM= [[Betastrahlung|β&lt;sup&gt;−&lt;/sup&gt;]]
+| Zerfallstyp3ZE= 0,232
+| Zerfallstyp3ZP= [[Thorium|&lt;sup&gt;224&lt;/sup&gt;Th]]
+}}
+{{Infobox Chemisches Element/Isotop
+| Massenzahl= 225
+| Symbol= Ac
+| NH= 0
+| Halbwertszeit= 10 [[Tag|d]]
+| AnzahlZerfallstypen= 1
+| Zerfallstyp1ZM= [[Alphastrahlung|α]]
+| Zerfallstyp1ZE= 5,935
+| Zerfallstyp1ZP= [[Francium|&lt;sup&gt;221&lt;/sup&gt;Fr]]
+}}
+{{Infobox Chemisches Element/Isotop
+| Massenzahl= 226
+| Symbol= Ac
+| NH= 0
+| Halbwertszeit= 29,4 [[Stunde|h]]
+| AnzahlZerfallstypen= 3
+| Zerfallstyp1ZM= [[Betastrahlung|β&lt;sup&gt;−&lt;/sup&gt;]]
+| Zerfallstyp1ZE= 0,640
+| Zerfallstyp1ZP= [[Thorium|&lt;sup&gt;226&lt;/sup&gt;Th]]
+| Zerfallstyp2ZM= [[Elektronen-Einfang|ε]]
+| Zerfallstyp2ZE= 1,116
+| Zerfallstyp2ZP= [[Radium|&lt;sup&gt;226&lt;/sup&gt;Ra]]
+| Zerfallstyp3ZM= [[Alphastrahlung|α]]
+| Zerfallstyp3ZE= 5,536
+| Zerfallstyp3ZP= [[Francium|&lt;sup&gt;222&lt;/sup&gt;Fr]]
+}}
+{{Infobox Chemisches Element/Isotop
+| Massenzahl= 227
+| Symbol= Ac
+| NH= 100
+| Halbwertszeit= 21,773 [[Jahr|a]]
+| AnzahlZerfallstypen= 2
+| Zerfallstyp1ZM= [[Betastrahlung|β&lt;sup&gt;−&lt;/sup&gt;]]
+| Zerfallstyp1ZE= 0,045
+| Zerfallstyp1ZP= [[Thorium|&lt;sup&gt;227&lt;/sup&gt;Th]]
+| Zerfallstyp2ZM= [[Alphastrahlung|α]]
+| Zerfallstyp2ZE= 5,536
+| Zerfallstyp2ZP= [[Francium|&lt;sup&gt;223&lt;/sup&gt;Fr]]
+}}
+{{Infobox Chemisches Element/Isotop
+| Massenzahl= 228
+| Symbol= Ac
+| NH= -1
+| Halbwertszeit= 6,15 h
+| AnzahlZerfallstypen= 1
+| Zerfallstyp1ZM= [[Betastrahlung|β&lt;sup&gt;−&lt;/sup&gt;]]
+| Zerfallstyp1ZE= 2,127
+| Zerfallstyp1ZP= [[Thorium|&lt;sup&gt;228&lt;/sup&gt;Th]]
+}}
+| NMREigenschaften=
+}}
+
+'''Actinium''' ([[Latein|latinisiert]] von {{grS|ακτίνα}} ''aktína'' ‚Strahl‘) ist ein [[Radioaktivität|radioaktives]] [[chemisches Element]] mit dem [[Elementsymbol]] Ac und der [[Ordnungszahl]] 89. Im [[Periodensystem der Elemente]] steht es in der 3.&amp;nbsp;[[Gruppe des Periodensystems|IUPAC-Gruppe]], der [[Scandiumgruppe]]. Das Element ist ein [[Metalle|Metall]] und gehört zur [[Periode-7-Element|7.&amp;nbsp;Periode]], [[Block des Periodensystems|d-Block]]. Es ist der Namensgeber der Gruppe der [[Actinoide]], der ihm folgenden 14 Elemente.
+
+== Geschichte ==
+:[[Datei:Periodensystem Mendelejews.jpg|mini|none|Mendelejews Periodensystem von 1871 mit einer Lücke für Actinium am unteren Rand, vor Thorium (''Th&amp;nbsp;=&amp;nbsp;231'')]]
+
+Actinium wurde im Jahr 1899 von dem französischen Chemiker [[André-Louis Debierne]] entdeckt, der es aus [[Pechblende]] isolierte und ihm zunächst Ähnlichkeiten mit dem [[Titan (Element)|Titan]]&lt;ref&gt;André-Louis Debierne: „Sur une nouvelle matière radio-active“, in: ''[[Comptes rendus]]'', '''1899''', ''129'', S.&amp;nbsp;593–595 ([http://gallica.bnf.fr/ark:/12148/bpt6k3085b/f593.table Gallica]).&lt;/ref&gt; oder dem [[Thorium]]&lt;ref&gt;André-Louis Debierne: „Sur un nouvel élément radio-actif&amp;nbsp;: l’actinium“, in: ''[[Comptes rendus]]'', '''1900''', ''130'', S.&amp;nbsp;906–908 ([http://gallica.bnf.fr/ark:/12148/bpt6k3086n/f906.table Gallica]).&lt;/ref&gt; zuschrieb. [[Friedrich Giesel]] entdeckte Actinium unabhängig davon im Jahr 1902&lt;ref&gt;Friedrich Oskar Giesel: „Ueber Radium und radioactive Stoffe“, in: ''[[Berichte der Deutschen Chemischen Gesellschaft]]'', '''1902''', ''35''&amp;nbsp;(3), S.&amp;nbsp;3608–3611, {{DOI|10.1002/cber.190203503187}}.&lt;/ref&gt; und beschrieb eine Ähnlichkeit zum [[Lanthan]]; im Jahr 1904 benannte er es „Emanium“.&lt;ref&gt;Friedrich Oskar Giesel: „Ueber den Emanationskörper (Emanium)“, in: ''[[Berichte der Deutschen Chemischen Gesellschaft]]'', '''1904''', ''37''&amp;nbsp;(2), S.&amp;nbsp;1696–1699, {{DOI|10.1002/cber.19040370280}}.&lt;/ref&gt; Nach einem Vergleich der Substanzen im Jahr 1904 wurde Debiernes Namensgebung der Vorzug gegeben, da er es zuerst entdeckt hatte.&lt;ref&gt;Friedrich Oskar Giesel: „Ueber Emanium“, in: ''[[Berichte der Deutschen Chemischen Gesellschaft]]'', '''1905''', ''38''&amp;nbsp;(1), S.&amp;nbsp;775–778, {{DOI|10.1002/cber.190503801130}}.&lt;/ref&gt;
+
+Die Geschichte der Entdeckung wurde in Publikationen von 1971&lt;ref&gt;H. W. Kirby: „The Discovery of Actinium“, in: ''[[Isis (Zeitschrift, 1912)|Isis]]'', '''1971''', ''62''&amp;nbsp;(3), S.&amp;nbsp;290–308 ([http://www.jstor.org/stable/view/229943?seq=1 jstor]).&lt;/ref&gt; und später im Jahr 2000&lt;ref&gt;J. P. Adloff: „The centenary of a controversial discovery: actinium“, in:'' [[Radiochimica Acta|Radiochim. Acta]]'', '''2000''', ''88'', S.&amp;nbsp;123, {{DOI|10.1524/ract.2000.88.3-4.123}}.&lt;/ref&gt; immer noch als fraglich beschrieben. Sie zeigen, dass die Publikationen von 1904 einerseits und die von 1899 und 1900 andererseits Widersprüche aufweisen.
+
+== Gewinnung und Darstellung ==
+Da in [[Uran]]erzen nur wenig Actinium vorhanden ist, spielt diese Quelle keine Rolle für die Gewinnung. Technisch wird das Isotop &lt;sup&gt;227&lt;/sup&gt;Ac durch Bestrahlung von &lt;sup&gt;226&lt;/sup&gt;Ra mit [[Neutron]]en in [[Kernreaktor]]en hergestellt.
+
+:&lt;math&gt;\mathrm{^{226}_{\ 88}Ra\ +\ ^{1}_{0}n\ \longrightarrow \ ^{227}_{\ 88}Ra\ \xrightarrow[42,2 \ min]{\beta^-} \ ^{227}_{\ 89}Ac}&lt;/math&gt;
+
+:&lt;small&gt;Die Zeitangaben sind [[Halbwertszeit]]en.&lt;/small&gt;
+
+Durch den schnellen Zerfall des Actiniums waren stets nur geringe Mengen verfügbar. Die erste künstliche Herstellung von Actinium wurde im [[Argonne National Laboratory]] in [[Chicago]] durchgeführt.
+
+== Eigenschaften ==
+=== Physikalische Eigenschaften ===
+Das Metall ist silberweiß glänzend&lt;ref name=&quot;blueglow&quot;/&gt; und relativ weich.&lt;ref&gt;Frederick Seitz, David Turnbull: ''Solid state physics: advances in research and applications'', Academic Press, 1964, ISBN 0-12-607716-9, S.&amp;nbsp;289–291 ({{Google Buch|BuchID=F9V3a-0V3r8C|Seite=289}}).&lt;/ref&gt; Aufgrund seiner starken Radioaktivität leuchtet Actinium im Dunkeln in einem hellblauen Licht.&lt;ref name=&quot;blueglow&quot;/&gt;
+
+Actinium ist das namensgebende Element der [[Actinoide]]n, ähnlich wie [[Lanthan]] für die [[Lanthanoide]]n. Die Gruppe der Elemente zeigt deutlichere Unterschiede als die Lanthanoide; daher dauerte es bis 1945, bis [[Glenn T. Seaborg]] die wichtigsten Änderungen zum Periodensystem von Mendelejew vorschlagen konnte: die Einführung der Actinoide.&lt;ref&gt;Glenn T. Seaborg: „The Transuranium Elements“, in: ''[[Science]]'', '''1946''', ''104'', Nr.&amp;nbsp;2704, S.&amp;nbsp;379–386; {{DOI|10.1126/science.104.2704.379}}; PMID 17842184.&lt;/ref&gt;
+
+=== Chemische Eigenschaften ===
+Es ist sehr reaktionsfähig und wird von Luft und Wasser angegriffen, überzieht sich aber mit einer Schicht von Actiniumoxid, wodurch es vor weiterer Oxidation geschützt ist.&lt;ref name=&quot;blueglow&quot;&gt;Joseph G. Stites, Murrell L. Salutsky, Bob D. Stone: „Preparation of Actinium Metal“, in: ''[[J. Am. Chem. Soc.]]'', '''1955''', ''77''&amp;nbsp;(1), S.&amp;nbsp;237–240; {{DOI|10.1021/ja01606a085}}&lt;/ref&gt; Das Ac&lt;sup&gt;3+&lt;/sup&gt;-Ion ist farblos. Das chemische Verhalten von Actinium ähnelt sehr dem [[Lanthan]]. Actinium ist in allen zehn bekannten Verbindungen dreiwertig.&lt;ref&gt;J. J. Katz, W. M. Manning: „Chemistry of the Actinide Elements“, in: ''[[Annual Review of Nuclear Science]]'', '''1952''', ''1'', S.&amp;nbsp;245–262; {{DOI|10.1146/annurev.ns.01.120152.001333}}.&lt;/ref&gt;
+
+== Isotope ==
+Bekannt sind 26 [[Isotop]]e, wovon nur zwei natürlich vorkommen. Das langlebigste Isotop &lt;sup&gt;227&lt;/sup&gt;Ac ([[Halbwertszeit]] 21,8&amp;nbsp;Jahre) ist ein [[Alpha-Strahlung|Alpha]]- und [[Beta-Strahlung|Beta]]-Strahler. Es ist ein Zerfallsprodukt des Uranisotops &lt;sup&gt;235&lt;/sup&gt;U und kommt zu einem kleinen Teil in Uranerzen vor. Daraus lassen sich wägbare Mengen &lt;sup&gt;227&lt;/sup&gt;Ac gewinnen, die somit ein verhältnismäßig einfaches Studium dieses Elementes ermöglichen. Da sich unter den radioaktiven Zerfallsprodukten einige Gammastrahler befinden, sind aber aufwändige Strahlenschutzvorkehrungen nötig.
+
+== Verwendung ==
+Actinium wird zur Erzeugung von Neutronen eingesetzt, die bei [[Neutronenaktivierungsanalyse|Aktivierungsanalysen]] eine Rolle spielen. Außerdem wird es für die [[Radionuklidbatterie#Wandler|thermoionische Energieumwandlung]] genutzt.
+
+Der Zerfall des &lt;sup&gt;227&lt;/sup&gt;Ac ist dual: Während der größte Teil unter Emission von Beta-Teilchen in das [[Thorium]]&lt;b/&gt;isotop &lt;sup&gt;227&lt;/sup&gt;Th übergeht, zerfällt ca. 1 % durch Alpha-Emission zu &lt;sup&gt;223&lt;/sup&gt;Fr. Eine Lösung von &lt;sup&gt;227&lt;/sup&gt;Ac ist daher als Quelle für das kurzlebige [[Francium]]&lt;b/&gt;isotop &lt;sup&gt;223&lt;/sup&gt;Fr verwendbar. Letzteres kann dann regelmäßig abgetrennt und untersucht werden.
+
+== Sicherheitshinweise ==
+Einstufungen nach der [[Gefahrstoffverordnung]] liegen nicht vor, weil diese nur die chemische Gefährlichkeit umfassen und eine völlig untergeordnete Rolle gegenüber den auf der [[Radioaktivität]] beruhenden Gefahren spielen. Auch Letzteres gilt nur, wenn es sich um eine dafür relevante Stoffmenge handelt.
+
+== Verbindungen ==
+Nur eine geringe Anzahl von Actiniumverbindungen ist bekannt. Mit Ausnahme von AcPO&lt;sub&gt;4&lt;/sub&gt; sind sie alle den entsprechenden Lanthanverbindungen ähnlich und enthalten Actinium in der Oxidationsstufe +3.&lt;ref name=&quot;j2&quot;&gt;Sherman Fried, French Hagemann, W. H. Zachariasen: „The Preparation and Identification of Some Pure Actinium Compounds“, in: ''[[J. Am. Chem. Soc.]]'', '''1950''', ''72'', S.&amp;nbsp;771–775 ({{DOI|10.1021/ja01158a034}}).&lt;/ref&gt; Insbesondere unterscheiden sich die Gitterkonstanten der jeweiligen Lanthan- und Actinium-Verbindungen nur in wenigen Prozent.&lt;ref name=&quot;j2&quot;/&gt;
+
+:{| class = &quot;wikitable&quot; style = &quot;text-align: center&quot;
+! Formel
+! Farbe
+! Symmetrie
+! [[Raumgruppe]]
+! [[Pearson-Symbol]]
+! ''a'' (pm)
+! ''b'' (pm) 
+! ''c'' (pm)
+! ''Z''
+! Dichte, &lt;br /&gt;g/cm&lt;sup&gt;3&lt;/sup&gt;
+|- 
+| Ac
+| silber
+| ''fcc''&lt;ref name=&quot;ach&quot;&gt;J. D. Farr, A. L. Giorgi, M. G. Bowman, R. K. Money: „The crystal structure of actinium metal and actinium hydride“, in: ''[[Journal of Inorganic and Nuclear Chemistry]]'', '''1961''', ''18'', S.&amp;nbsp;42–47 ({{DOI|10.1016/0022-1902(61)80369-2}}).&lt;/ref&gt;
+| {{Raumgruppe|Fm-3m|kurz}}
+| cF4 
+| 531,1
+| 531,1
+| 531,1
+| 4
+| 10,07
+|- 
+| AcH&lt;sub&gt;2&lt;/sub&gt;
+| 
+| kubisch&lt;ref name=&quot;ach&quot;/&gt;
+| {{Raumgruppe|Fm-3m|kurz}}
+| cF12
+| 567
+| 567
+| 567
+| 4
+| 8,35
+|- 
+| Ac&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;3&lt;/sub&gt;
+| weiß&lt;ref name=&quot;blueglow&quot;/&gt;
+| trigonal&lt;ref name=&quot;aco&quot;&gt;W. H. Zachariasen: „Crystal Chemical Studies of the 5''f''-Series of Elements. XII. New Compounds Representing known Structure Types“, in: ''[[Acta Crystallographica]]'', '''1949''', ''2'', S.&amp;nbsp;388–390 ({{DOI|10.1107/S0365110X49001016}}).&lt;/ref&gt;
+| {{Raumgruppe|P-3m1|kurz}}
+| hP5
+| 408
+| 408
+| 630
+| 1
+| 9,18
+|- 
+| Ac&lt;sub&gt;2&lt;/sub&gt;S&lt;sub&gt;3&lt;/sub&gt;
+|
+| kubisch&lt;ref name=&quot;acs&quot;&gt;W. H. Zachariasen: „Crystal Chemical Studies of the 5''f''-Series of Elements. VI. The Ce&lt;sub&gt;2&lt;/sub&gt;S&lt;sub&gt;3&lt;/sub&gt;–Ce&lt;sub&gt;3&lt;/sub&gt;S&lt;sub&gt;4&lt;/sub&gt; Type of Structure“, in: ''[[Acta Crystallographica]]'', '''1949''', ''2'', S.&amp;nbsp;57–60 ({{DOI|10.1107/S0365110X49000126}}).&lt;/ref&gt;
+| {{Raumgruppe|I-43d|kurz}}
+| cI28
+| 778,56
+| 778,56
+| 778,56
+| 4
+| 6,71
+|- 
+| AcF&lt;sub&gt;3&lt;/sub&gt;
+| weiß&lt;ref name=&quot;m71&quot;&gt;Gerd Meyer, Lester R. Morss: ''Synthesis of lanthanide and actinide compounds'', Springer, 1991, ISBN 0-7923-1018-7, S.&amp;nbsp;71 ({{Google Buch|BuchID=bnS5elHL2w8C|Seite=71}}).&lt;/ref&gt;
+| hexagonal&lt;ref name=&quot;aco&quot;/&gt;&lt;ref name=&quot;j2&quot;/&gt;
+| {{Raumgruppe|P-3c1|kurz}}
+| hP24
+| 741
+| 741
+| 755
+| 6
+| 7,88
+|- 
+| AcCl&lt;sub&gt;3&lt;/sub&gt;
+| 
+| hexagonal&lt;ref name=&quot;accl&quot;&gt;W. H. Zachariasen: „Crystal Chemical Studies of the 5''f''-Series of Elements. I. New Structure Types“, in: ''[[Acta Crystallographica]]'', '''1948''', ''1'', S.&amp;nbsp;265–268 ({{DOI|10.1107/S0365110X48000703}}).&lt;/ref&gt;&lt;ref name=&quot;j2&quot;/&gt;
+| {{Raumgruppe|P63/m|kurz}}
+| hP8
+| 764
+| 764
+| 456
+| 2
+| 4,8
+|- 
+| AcBr&lt;sub&gt;3&lt;/sub&gt;
+| weiß&lt;ref name=&quot;j2&quot;/&gt;
+| hexagonal&lt;ref name=&quot;accl&quot;/&gt;
+| {{Raumgruppe|P63/m|kurz}}
+| hP8
+| 764
+| 764
+| 456
+| 2
+| 5,85
+|- 
+| AcOF
+| weiß&lt;ref name=&quot;m87&quot;&gt;Gerd Meyer, Lester R. Morss: ''Synthesis of lanthanide and actinide compounds'', Springer, 1991, ISBN 0-7923-1018-7, S.&amp;nbsp;87–88 ({{Google Buch|BuchID=bnS5elHL2w8C|Seite=87}}).&lt;/ref&gt;
+| kubisch&lt;ref name=&quot;j2&quot;/&gt;
+| {{Raumgruppe|Fm-3m|kurz}}
+| 
+| 593,1
+| 
+| 
+| 
+| 8,28
+|- 
+| AcOCl
+| 
+| tetragonal&lt;ref name=&quot;j2&quot;/&gt;
+| 
+| 
+| 424
+| 424
+| 707
+| 
+| 7,23
+|- 
+| AcOBr
+| 
+| tetragonal&lt;ref name=&quot;j2&quot;/&gt;
+| 
+| 
+| 427
+| 427
+| 740
+| 
+| 7,89
+|- 
+| AcPO&lt;sub&gt;4&lt;/sub&gt; · 0,5 H&lt;sub&gt;2&lt;/sub&gt;O
+| 
+| hexagonal&lt;ref name=&quot;j2&quot;/&gt;
+| 
+| 
+| 721
+| 721
+| 664
+| 
+| 5,48
+|}
+
+=== Oxide ===
+[[Actinium(III)-oxid]]&amp;nbsp;(Ac&lt;sub&gt;2&lt;/sub&gt;O&lt;sub&gt;3&lt;/sub&gt;) kann durch Erhitzen des [[Actinium(III)-hydroxid|Hydroxids]] bei 500&amp;nbsp;°C oder des [[Actinium(III)-oxalat|Oxalats]] bei 1100&amp;nbsp;°C im Vakuum erhalten werden. Das Kristallgitter ist isotyp mit den Oxiden der meisten dreiwertigen [[Seltenerdmetalle]].&lt;ref name=&quot;j2&quot;/&gt;
+
+=== Halogenide ===
+[[Actinium(III)-fluorid]]&amp;nbsp;(AcF&lt;sub&gt;3&lt;/sub&gt;) kann entweder in Lösung oder durch Feststoffreaktion dargestellt werden. Im ersten Fall gibt man bei Raumtemperatur [[Flusssäure]] zu einer Ac&lt;sup&gt;3+&lt;/sup&gt;-Lösung und fällt das Produkt aus. im anderen Fall wird Actinium-Metall mit Fluorwasserstoff bei 700&amp;nbsp;°C in einer Platinapparatur behandelt. 
+
+[[Actinium(III)-chlorid]]&amp;nbsp;(AcCl&lt;sub&gt;3&lt;/sub&gt;) wird durch Umsetzung von Actiniumhydroxid oder -oxalat mit [[Tetrachlormethan]] bei Temperaturen oberhalb von 960&amp;nbsp;°C erhalten.&lt;ref name=&quot;j2&quot;/&gt;
+
+Die Reaktion von [[Aluminiumbromid]] und Actinium(III)-oxid führt zum [[Actinium(III)-bromid]]&amp;nbsp;(AcBr&lt;sub&gt;3&lt;/sub&gt;) und Behandlung mit feuchtem Ammoniak bei 500&amp;nbsp;°C führt zum Oxibromid AcOBr.&lt;ref name=&quot;j2&quot;/&gt;
+
+=== Weitere Verbindungen ===
+Gibt man [[Natriumdihydrogenphosphat]]&amp;nbsp;(NaH&lt;sub&gt;2&lt;/sub&gt;PO&lt;sub&gt;4&lt;/sub&gt;) zu einer Lösung von Actinium in Salzsäure, erhält man weiß gefärbtes [[Actiniumphosphat]]&amp;nbsp;(AcPO&lt;sub&gt;4&lt;/sub&gt;&amp;nbsp;·&amp;nbsp;0,5&amp;nbsp;H&lt;sub&gt;2&lt;/sub&gt;O); ein Erhitzen von [[Actinium(III)-oxalat]] mit [[Schwefelwasserstoff]] bei 1400&amp;nbsp;°C für ein paar Minuten führt zu schwarzem [[Actinium(III)-sulfid]]&amp;nbsp;(Ac&lt;sub&gt;2&lt;/sub&gt;S&lt;sub&gt;3&lt;/sub&gt;).&lt;ref name=&quot;j2&quot;/&gt;
+
+== Literatur ==
+* Harold W. Kirby, Lester R. Morss: [http://radchem.nevada.edu/classes/rdch710/files/Actinium.pdf Actinium], in: Lester R. Morss, Norman M. Edelstein, Jean Fuger (Hrsg.): ''The Chemistry of the Actinide and Transactinide Elements'', Springer, Dordrecht 2006; ISBN 1-4020-3555-1, S.&amp;nbsp;18–51; {{DOI|10.1007/1-4020-3598-5_2}}.
+
+== Weblinks ==
+{{Wiktionary}}
+{{Commonscat}}
+* {{RömppOnline |Name=Actinium |Datum=3. Januar 2015 |ID=RD-01-00659 }}
+
+== Einzelnachweise ==
+&lt;references /&gt;
+
+{{Navigationsleiste Periodensystem}}
+
+{{Normdaten|TYP=s|GND=4523163-1|LCCN=sh/85/000706}}</text>
+      <sha1>dnnn5bt2e5nba4gn6fzhsb2g7d92xhz</sha1>
+    </revision>
+  </page>
+</mediawiki>

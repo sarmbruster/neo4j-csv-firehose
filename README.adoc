@@ -20,7 +20,7 @@ To build the project just type:
 
     ./gradlew jar
 
-Copy (or symlink) the resulting file `./build/libs/neo4j-csv-firehose-0.1-SNAPSHOT.jar` to Neo4j's `plugins` folder.
+Copy (or symlink) the resulting file `./build/libs/neo4j-csv-firehose-0.2-SNAPSHOT.jar` to Neo4j's `plugins` folder.
 
 Copy any JDBC driver jar files for your relational databases into the `plugins` folder as well. E.g. for mysql use http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.36/mysql-connector-java-5.1.36.jar.
 
@@ -49,7 +49,7 @@ Type
 
     ./gradlew jar
 
-to build and copy (or symlink) the resulting file `./build/libs/neo4j-csv-firehose-0.1-SNAPSHOT.jar` to Neo4j's `plugins` folder.
+to build and copy (or symlink) the resulting file `./build/libs/neo4j-csv-firehose-0.2-SNAPSHOT.jar` to Neo4j's `plugins` folder.
 
 Copy any JDBC driver jar files for your relational databases into the `plugins` folder as well. E.g. for mysql use http://central.maven.org/maven2/mysql/mysql-connector-java/5.1.36/mysql-connector-java-5.1.36.jar.
 
@@ -103,3 +103,16 @@ When running as separate server use:
 Running as URLStreamHandler:
 
     neo4j-sh (?)$ load csv with headers from "jdbc:mysql://localhost/mydb?table=person&user=mydb&password=123" as line create (:Person {firstname: line.firstName, lastname: line.lastName});
+
+### wikimedia
+
+There's also some very experimental code for importing wikimedia files. For now this is limited to titles of documents and links between docuements. The csv format used is
+
+    title, reference
+
+As an example, you can use `LOAD CSV`:
+
+    load csv from 'wikimedia:file:///home/stefan/lib/neo4j/neo4j-csv-firehose/src/test/resources/dewiki-20150826-pages-articles-multistream_snippet.xml' as line
+    merge (t:Document{title:line.title})
+    merge (r:Document{title:line.reference})
+    merge (t)-[:REFERENCES]->(r)
